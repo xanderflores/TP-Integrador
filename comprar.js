@@ -66,3 +66,10 @@ resetButton.addEventListener('click',function() {
     let descuento=0;
     resultadoElement.textContent = `$ ${descuento}`;
 });
+document.addEventListener("DOMContentLoaded", function() {
+    var miImagen = document.getElementById("imagen");
+    miImagen.addEventListener("click", function() {
+      // Redirecciona a la URL deseada
+      window.location.href = "index.html";
+    });
+  })
