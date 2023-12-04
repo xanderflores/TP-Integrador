@@ -224,10 +224,13 @@
 }
 
 .caja3 {
-    width: 500px;
-    height: 60%;
-    text-align: left;
-    scroll-behavior: inherit;
+    width: 100%; /* Cambiar a 100% para ocupar el ancho completo del contenedor padre */
+    height: 60%; /* Cambiar a 'auto' para que la altura se ajuste automáticamente al contenido */
+    text-align: start;
+    max-width: 500px; /* Establecer un ancho máximo si es necesario */
+    box-sizing: border-box;
+     /* Evitar que el usuario redimensione manualmente */
+    
 }
 .box3 form button{
     width: 500px;

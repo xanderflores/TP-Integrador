@@ -227,10 +227,11 @@
     background-color:  #97c93e;
     width: 49%;
     justify-content: center;
-    border-radius: 4px;
+    border-radius: 2px;
     align-items: center;
     text-align: center;
-    height: auto;
+   display: flex;
+   justify-content: center;
 }
 .fila4 .custom-button:hover {
     background-color: #218826;
