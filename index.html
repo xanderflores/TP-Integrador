@@ -81,8 +81,8 @@
                                 Ven a conocer a miembros del evento, a otros estudiantes de codo a codo y los oradores 
                                 de primer nivel que tenemos para ti. Te esperemos!
                             </p>
-                            <button  href="#convierte" type="button" class="btn btn-outline-success" >Quiero ser orador</button>
-                            <button type="button" class="btn btn-success">Comprar tickets</button>
+                            <button  id="oradorButton" type="button" class="btn btn-outline-success" >Quiero ser orador</button>
+                            <button id="comprarButton" type="button" class="btn btn-success">Comprar tickets</button>
                         </div>
                     </div>
                     <div class="carousel-item">
@@ -201,7 +201,7 @@
                         <input class="caja1" placeholder="Nombre"/>
                         <input class="caja2" placeholder="Apellido"/>
                     </div>
-                    <input  id="caja3"class="caja3" placeholder="Sobre que cosa quieres hablar?"/>
+                    <textarea  id="caja3"class="caja3" rows="1" type="text" placeholder="Sobre que cosa quieres hablar?"></textarea>
                     <p class="dato_description">Recuerda incluir un titulo para tu charla</p>
                     <button class="button">Enviar</button>
                 </form>
@@ -217,7 +217,7 @@
         <a clas="footer_parrafo" href="#">Privacidad</a>
         <a clas="footer_parrafo" href="#">estudiantes</a>
     </footer>
-    <script type="module" src="./index.jsx"></script>
+    <script type="module" src="./index.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

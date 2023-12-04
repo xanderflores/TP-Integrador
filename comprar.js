@@ -1,4 +1,4 @@
-import { datos } from './data/data.js';
+import { datos,opciones } from './data/data.js';
 
 
 console.log('Valor: ',datos);
@@ -22,11 +22,6 @@ const inputElement = document.getElementById('cantidad');
 
 function generarSelecciones() {
     const select = document.getElementById('select'); 
-    const opciones = [
-        { value: 'estudiante', textContent: 'Estudiante' },
-        { value: 'trainee', textContent: 'Trainee' },
-        { value: 'junior', textContent: 'Junior' }
-    ];
     opciones.forEach(opcion => {
         const option = document.createElement('option');
         option.value = opcion.value;
@@ -58,6 +53,7 @@ calcularButton.addEventListener('click',function() {
             descuento=(cantidad*valor-valorJunior*cantidad*valor);
             break;
         default:
+            descuento=(cantidad*valor);
    }
    resultadoElement.textContent = `$  ${descuento.toFixed(2)}`;
    console.log("SADSADSADSADA ",descuent.toFixed(2))
